@@ -29,10 +29,10 @@ $user_avatar = 'img/user.jpg';
         <nav class="user-menu">
 <?php if ($is_auth):?>
     <div class="user-menu__image">
-      <img src="img/user.jpg" width="40" height="40" alt="Пользователь">
+      <img src="<?=$user_avatar; ?>" width="40" height="40" alt="Пользователь">
     </div>
     <div class="user-menu__logged">
-      <p>Константин</p>
+      <p><?=$user_name; ?></p>
 <?php else: ?>
     <ul class="user-menu__list">
     <li class="user-menu__item">
@@ -43,8 +43,7 @@ $user_avatar = 'img/user.jpg';
     </li>
   </ul>
 <?php endif; ?>
-
-  </div>
+    </div>
 
         <!-- здесь должен быть PHP код для показа аватара пользователя -->
 
